@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <header class="header">
+      <div class="header__container _container">
+        <!-- logo start -->
+        <div class="logo">
+          <a href="./">
+            <h1 class="logo__title">Cozy House</h1>
+            <span class="logo__subtitle">Shelter for pets in Boston</span>
+          </a>
+        </div>
+        <!-- logo end -->
+        <!-- navigation start -->
+        <nav class="nav nav__header">
+          <!-- burger start -->
+          <div class="burger burger_active">
+            <span class="burger__line"></span>
+          </div>
+          <!-- burger end -->
+          <ul class="menu">
+            <li class="menu__item menu__item_active">
+              <a href="" class="link menu__link menu__link_active"
+                >About the shelter</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="" class="link menu__link">Our pets</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="link menu__link">Help the shelter</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="link menu__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation end -->
+      </div>
+    </header>
+    <main class="main">
+      <a href="http://">ssss</a>
+    </main>
+    <footer class="footer">
+      <div class="footer__container _container">
+        <div class="layout-3-column">
+          <div class="footer__content column-1">
+            <div class="content__title"><h3>For questions and suggestions</h3></div>
+            <div class="content__text main"><a class="icon-block" href="mailto:email@shelter.com"><span class="icon-mail"></span><span class="icon-text">email@shelter.com</span></a></div>
+            <div class="content__text phone"><a class="icon-block" href="tel:+13 674 567 75 54"><span class="icon-phone"></span><span class="icon-text">+13 674 567 75 54</span></a></div>
+          </div>
+          <div class="footer__content column-2">
+            <div class="content__title"><h3>We are waiting for your visit</h3></div>
+            <div class="content__text-pine"><a class="icon-block" href="http://"><span class="icon-pin"></span><span class="icon-text">1 Central Street, Boston (entrance from the store)</span></a></div>
+            <div class="content__text-pine"><a class="icon-block" href="http://"><span class="icon-pin"></span><span class="icon-text">18 South Park, London</span></a></div>
+          </div>
+          <div class="footer__content column-3">
+            <img src="./img/png/footer-puppy.png" alt="puppy" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>

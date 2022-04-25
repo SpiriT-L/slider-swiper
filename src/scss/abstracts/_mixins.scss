@@ -1,0 +1,88 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+// /// Make a context based selector a little more friendly
+// /// @author Kitty Giraudel
+// /// @param {String} $context
+// @mixin when-inside($context) {
+//   #{$context} & {
+//     @content;
+//   }
+// }
+
+// @mixin large-text {
+//   font: {
+//     family: Arial;
+//     size: 20px;
+//     weight: bold;
+//   }
+//   color: #ff0000;
+// }
+
+@mixin font-font(
+  $size: 1.6rem,
+  $weight: 400,
+  $family: $font-primary,
+  $style: normal
+) {
+  font: {
+    family: $family;
+    style: $style;
+    weight: $weight;
+    size: $size;
+  }
+}
+
+@mixin transition($class, $time: 1s, $time2: 0.5s) {
+  transition: $class ease-out $time2;
+}
+
+@mixin columns($width) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  > * {
+    flex-basis: $width;
+  }
+  @media (max-width: $md){
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+}
+
+@mixin h3 {
+  @include font-font(3.5rem, 400, Georgia);
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-light-x;
+}
+
+@mixin h4 {
+  @include font-font(2rem, 400, Georgia);
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color-primary;
+}

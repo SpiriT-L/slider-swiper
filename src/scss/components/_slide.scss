@@ -1,0 +1,98 @@
+.swiper {
+}
+.image-slider {
+  width: 600px;
+  padding: 30px 0px 70px 0px;
+
+  // Мультирядность
+  // height: 600px;
+
+  // вертикальный слайдер
+  height: 700px;
+
+  // .image-slider__wrapper
+
+  &__wrapper {
+    // display: flex;
+    // justify-content: center;
+  }
+
+  // .image-slider__slide
+
+  &__slide {
+  }
+
+  // .image-slider__img
+
+  &__img {
+    // width: 270px;
+    text-align: center;
+    // display: flex;
+    // justify-content: center;
+    & img {
+      max-width: 100%;
+    }
+  }
+  // ================================================ БУЛЛЕТЫ ========================================================================//
+  & .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    // background-color: #fff;
+    background-color: #686161;
+  }
+  // ================================================ БУЛЛЕТЫ ========================================================================//
+
+  // ================================================ ФРАКЦИИ ========================================================================//
+  // Фракции
+  // & .swiper-pagination-fraction {
+  //   font-size: 20px;
+  //   color: red;
+  // }
+  // ================================================ ФРАКЦИИ ========================================================================//
+
+  // ================================================ ПРОГРЕССБАР ========================================================================//
+  // & .swiper-pagination-progressbar-fill {
+  //   background-color: #000;
+  // }
+  // ================================================ ПРОГРЕССБАР ========================================================================//
+  // ================================================ СКРОЛЛБАР ========================================================================//
+  .swiper-scrollbar-drag {
+    cursor: pointer;
+    background-color: aqua;
+  }
+  // ================================================ СКРОЛЛБАР ========================================================================//
+
+  .swiper-slide {
+    // width: auto; // Автоширина
+    // height: calc((100% - 30px) / 2); //Мультирядность
+    // overflow: hidden; // Мультирядность
+  }
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+  height: calc((100% - 30px) / 2); //Мультирядность
+  overflow: hidden; // Мультирядность
+}
+.swiper-pagination {
+  bottom: 0px;
+}
+.swiper-button-prev {
+  @extend %button-slider;
+}
+.swiper-button-next {
+  @extend %button-slider;
+}
+.swiper-scrollbar {
+}
+
+// .swiper-pagination-bullet {
+//   width: 20px;
+//   height: 20px;
+//   line-height: 20px;
+//   font-size: 14px;
+//   // background-color: #fff;
+//   ckground-color: #ccc;
+// }

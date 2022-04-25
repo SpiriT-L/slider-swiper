@@ -1,0 +1,21 @@
+.logo {
+  // .logo__title
+
+  &__title {
+    @include font-font(3.2rem, 400, Georgia);
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #f1cdb3;
+    margin: 0px 0px 10px 0px;
+    width: 186px;
+    height: 35px;
+  }
+
+  &__subtitle {
+    @include font-font(1.3rem, 400, Arial);
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    padding: 0px 0px 0px 4px;
+  }
+}

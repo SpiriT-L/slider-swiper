@@ -1,0 +1,123 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+  width: 100%;
+  background: radial-gradient(
+      110.67% 538.64% at 5.73% 50%,
+      #513d2f 0%,
+      #1a1a1c 100%
+    ),
+    #211f20;
+
+  // .footer__container
+
+  &__container {
+    margin: 40px 0px 0px 0px;
+  }
+
+  // .footer__content
+
+  &__content {
+    max-width: 302px;
+    & :not(:last-child) {
+    }
+
+    gap: 50px;
+    &:last-child {
+      // padding: 40px 1px 0px 6%;
+      // display: flex;
+      // justify-content: flex-end;
+    }
+  }
+}
+
+.content {
+  // .content__title
+
+  &__title {
+    @extend %h3;
+    padding: 0px 0px 0px 0px;
+    width: 284px;
+    margin: 0px 0px 40px 0px;
+  }
+
+  // .content__text
+
+  &__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin: 0px 0px 40px 0px;
+    }
+    & a {
+      @extend %h4;
+      cursor: pointer;
+
+      &:hover {
+        //  opacity: 0.8;
+        color: #ae9481;
+        transition: color 0.1s ease 0.1s;
+      }
+    }
+  }
+
+  &__text-pine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 302px;
+    &:not(:last-child) {
+      margin: 0px 0px 32px 0px;
+    }
+    & a {
+      @extend %h4;
+      cursor: pointer;
+
+      &:hover {
+        //  opacity: 0.8;
+        color: #ae9481;
+        transition: color 0.1s ease 0.1s;
+      }
+    }
+  }
+}
+.icon-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.column-1 {
+  margin: 0px 160px 0px 0px;
+  width: 238px;
+  height: 234px;
+  @media (max-width: $md){
+    margin: 0px 60px 0px 0px;
+  }
+}
+.column-2 {
+  width: 310px;
+  height: 234px;
+  // margin: 0px 60px 0px 0px;
+}
+.column-3 {
+  max-width: 300px;
+  height: 310px;
+  padding: 40px 0px 0px 0;
+  display: flex;
+  justify-content: flex-end;
+  & img{
+    min-width: 70%;
+  }
+  @media (max-width: $md){
+  // margin: 60px 0px 0px 0px;
+  }
+}
